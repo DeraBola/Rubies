@@ -1,0 +1,638 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+* {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+body {
+  background-color: #e5e5e5;
+  
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+ 
+}
+
+hmtl, body{
+  width: auto!important;
+  overflow-x:hidden !important;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  color: #ba271b;
+  border: 2px solid #ba271b;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  margin: 8px;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #ba271b;
+  border: 1px solid #000000;
+  border-radius: 6px;
+}
+/*-------Header--------*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 9%;
+  z-index: 1000;
+  background: #e5e5e5;
+}
+
+.header.active {
+  padding: 2rem 9%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header .logo-contents {
+  display: flex;
+  text-align: center;
+}
+
+  .logo-contents .logo-1 img{
+     width: 100%;
+  }
+
+  .logo-contents .logo-2 img{
+ width: 100%;
+ }
+
+  
+  .header .logo-contents .logo-text2{
+    margin-left: 15px;
+    font-family: 'BuenosAiresWeb';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 10px;
+    color: #969696;
+    text-transform: none;
+  }
+
+ 
+/*-------Navbar------*/
+.header .navbar a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.header .navbar a:hover {
+  color: #ba271b;
+  border-bottom: 2px solid #ba271b;
+  width: 100px;
+}
+
+.header .navbar .active {
+  color: #ba271b;
+  border-bottom: 2px solid #ba271b;
+  width: 100px;
+}
+
+.header #menu-btn {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.header #login-btn i {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+/*-------Small-Rectangle-----*/
+
+.rectangle-1 .small-rect {
+  text-align: center;
+  margin-top: 150px;
+  width: 100%;
+  
+}
+
+/*---------Customer Service------*/
+
+/*-------Contacts--------*/
+
+#contacts .contacts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+#contacts .contacts-container .agent-area {
+  padding: 10px;
+  flex: 1 1 42rem;
+}
+
+.agent-area .area-text {
+  position: relative;
+  padding: 20px 20px;
+}
+
+.agent-area .area-text img {
+  background-size: contain;
+}
+
+#contacts .agent-area .area-text .area-text-1 {
+  position: absolute;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  width: 100%;
+  text-transform: none;
+  top: 40%;
+  color: #333333;
+  background-color: transparent;
+}
+
+#contacts .agent-area .area-text-2 p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.65);
+  text-transform: none;
+}
+
+/*---------image center------*/
+.agent-area .contact-pic {
+  margin-top: 10px;
+  padding: 20px 20px;
+}
+
+.agent-area .contact-pic img {
+  width: 100%;
+}
+
+/*--------contact-form-------*/
+
+.contact-form {
+  background: #ffffff;
+  opacity: 0.8;
+  border: 1px solid rgba(186, 39, 27, 0.15);
+  margin-top: 60px;
+  border-radius: 20px; 
+}
+
+.contact-form form {
+  margin-top: 47px;
+  padding: 5rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.contact-form form .user-details {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+  text-align: start;
+}
+
+form .user-details .input-box {
+  width: calc(100% / 2 - 20px);
+  background: transparent;
+}
+
+.user-details .input-box input {
+  height: 50px;
+  width: 100%;
+}
+
+.user-details .input-box .details {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 105.9%;
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: capitalize;
+}
+
+.user-details .input-box input[type="text"] {
+  background: rgba(214, 214, 214, 0.3);
+  border-radius: 10px;
+  line-height: 50px;
+  margin-top: 7px;
+}
+
+/*----------number-contianer--------*/
+.contact-form form .number-contianer{
+    text-align: start;
+    margin-top: 20px;
+}
+
+ .number-contianer .phone-number{
+     display: flex;
+     
+}
+
+.number-contianer .phone-number input {
+    height: 50px;
+    width:  100%;
+  }
+
+  .number-contianer .details{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 105.9%;
+    color: rgba(0, 0, 0, 0.4);
+    text-transform: capitalize;
+  } 
+
+  .phone-number  input[type="text"] {
+    background: rgba(214, 214, 214, 0.3);
+    border-radius: 0px 10px 10px 0px;
+    line-height: 50px;
+    margin-top: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.15); 
+    
+  }
+
+  .phone-number select{
+    margin-top: 10px;
+    background: #FFFFFF;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    border-radius: 10px 0px 0px 10px;
+    height: 50px;
+  }
+
+/*---------company-name--------*/
+
+.contact-form form .company-name{
+  text-align: start;
+  margin-top: 20px;
+}
+
+.company-name .company-input input {
+  height: 50px;
+  width:  100%;
+}
+ 
+.company-name .company-input .details{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 105.9%;
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: capitalize;
+} 
+
+.company-name .company-input input[type="text"] {
+  background: rgba(214, 214, 214, 0.3);
+  border-radius: 10px;
+  line-height: 50px;
+  margin-top: 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.15); 
+  
+}
+
+/*---------company-sector--------*/
+
+.contact-form form .company-sector{
+  text-align: start;
+  margin-top: 20px;
+  
+}
+
+.company-sector .details{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 105.9%;
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: capitalize; 
+} 
+
+.company-sector select{
+  background: rgba(214, 214, 214, 0.3);
+  border-radius: 10px;
+  height: 50px;
+  margin-top: 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.15); 
+  width:  100%;
+}
+
+/*---------text-area--------*/
+
+.contact-form form .text-area{
+  text-align: start;
+  margin-top: 20px;
+  
+}
+
+.text-area .details{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 105.9%;
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: none; 
+} 
+
+.text-area textarea{
+  background: rgba(214, 214, 214, 0.3);
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.15); 
+  width:  100%;
+}
+
+/*--------btn-login---------*/
+.contact-form form .btn-login{
+  text-align: right;
+  margin-top: 20px;
+}
+
+/*-------------ellipse-rect--------*/
+
+.contacts-container .ellipse-rect {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 20px 5x;
+  margin: 10px;
+}
+
+.contacts-container .ellipse-rect .rect {
+  width: 100%;
+  margin-top: 80px;
+  text-align: left;
+}
+
+.contacts-container .ellipse-rect .ellipse {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.contacts-container .ellipse-rect .ellipse .ellipse-1 {
+  width: 100%;
+  margin-top: 60px;
+  transform: rotate(37deg);
+  background-color: transparent;
+   
+}
+
+.contacts-container .ellipse-rect .ellipse .rect-1 {
+  width: 100%;
+  margin-top: 66px;
+}
+
+
+/*---------Footer---------*/
+
+.footer{
+  padding-bottom: 8rem;
+  margin-top: 30px;
+}
+
+.footer .footer-container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+     
+}
+
+.footer .footer-container .box h3{
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+color: #333333;
+margin-bottom: 10px;
+text-transform: capitalize;
+}
+
+.footer-container .box{
+  margin-bottom: 30px;
+}
+
+.footer-container .box a{
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 105.9%;
+  color: #555555;
+  margin-top: 10px;
+}
+
+.footer-container .rect-4 img{
+   margin-top: 140px;
+}
+
+.footer-container .media{
+  margin-bottom: 30px;
+}
+
+.footer-container .media h3{
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+color: #333333;
+margin-bottom: 10px;
+}
+
+.footer-container .media .fonts a{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 105.9%;
+}
+
+.footer-container .media .fonts i{
+  padding-right: 10px;
+  color: #555555;
+}
+
+.footer-container .media .press{
+  font-weight: 500;
+  font-size: 15px;
+  color: #555555;
+}
+
+.footer-container .rect-5 img{ 
+   margin-top: 60px;
+   margin-bottom: 30px;
+}
+
+.footer-container .bank{
+  margin-bottom: 30px;
+}
+
+.footer-container .bank h3{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.bank .bank-img img{
+ width: 100%;
+}
+
+.footer .credit{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.credit .credit-contents {
+  display: inline-block;
+  width: 100%;
+}
+
+.credit .credit-contents .logo-text4{
+  margin-left: 125px;
+  font-family: 'BuenosAiresWeb';
+font-weight: 300;
+font-size: 12px;
+line-height: 10px;
+color: #969696
+}
+
+.footer .rect-right{
+  margin-left: 80rem;
+}
+
+
+
+
+
+/*------------Media Query-------*/
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  .header.active {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: block;
+  }
+
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header #login-btn i {
+    display: block;
+  }
+
+  /*------navbar-----*/
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #000000;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    background-color: #e5e5e5;
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .header .navbar a {
+    margin: 8px;
+    display: block;
+    font-size: 14px;
+  }
+
+  /*---------login-btn---------*/
+  #login.fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .btn-login {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #000000;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    background-color: #e5e5e5;
+  }
+
+  .header .btn-login.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .header .btn-login .btn{ 
+    display: block;
+  }  
+
+/*---------contacts---------*/
+
+  #contacts .agent-area .area-text .area-text-1 {
+    font-size: 18px;
+  }
+
+  #contacts .agent-area .area-text-2 p {
+    font-size: 14px;
+  }
+
+
+  .header .logo-contents {
+    display: flex;
+    text-align: center;
+    padding-right: rem;
+  }
+
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+}
